@@ -5,7 +5,7 @@ document.getElementById("footer").innerHTML = `
       <div class="footWrap defaultPadding">
         <div class="row">
           <!-- Company Info -->
-          <div class="col-lg-auto col-sm-6 mb-4 mb-md-0">
+          <div class="col-lg-auto col-sm-6 mb-4 mb-md-0 footer-div">
             <a class="footer-brand" href="index.html">
               <img id="footer_logo" loading="lazy" src="image/BrandLogo.webp" alt="Company">
             </a>

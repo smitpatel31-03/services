@@ -348,9 +348,31 @@
       const number = "919426547996";
       const productName = el.dataset.product;
       const message = `Hello, I’m interested in learning more about your product: "${productName}". Could you please provide more details?`
-      const encodedMessage = encodeURIComponent(message)
-      el.href = `https://wa.me/${number}?text=${encodedMessage}`;
-      el.target = "_blank"
+      const encodedMessage = encodeURIComponent(message);
+
+      
+const mobileLink = `https://api.whatsapp.com/send?phone=${number}&text=${encodedMessage}`;
+const desktopLink = `https://web.whatsapp.com/send?phone=${number}&text=${encodedMessage}`;
+
+    function isMobileDevice() {
+    return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+    function updateWhatsAppLink() {
+    const isMobile = isMobileDevice();
+    const targetLink = isMobile ? mobileLink : desktopLink;
+
+
+          el.href = targetLink;
+      el.target = "_blank";
+  }
+
+  window.addEventListener("resize", updateWhatsAppLink);
+  window.addEventListener("load", updateWhatsAppLink);
+
+  
+
+
     })
   </script>
 

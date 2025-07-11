@@ -552,17 +552,30 @@ color: var(--hover-secondary);
 /* banner css end */
 
 /* footer section start */
+.footer-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .footWrap>.row{
   justify-content: space-between;
 }
 .footer {
   background: 0 0 / cover var(--primary-color);
 }
-.footer .footer-brand {
+.footer-brand{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer{
   display: block;
   width: 50px;
   min-width: 50px;
   margin-bottom: 16px;
+}
+.footer-brand{
+
 }
 .footer .fourthH {
   color: #e6e6e6;
