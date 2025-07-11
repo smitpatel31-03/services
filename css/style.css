@@ -284,7 +284,7 @@ color: var(--hover-secondary);
 }
 .Banner .item1 {
   background: linear-gradient(#000000a8, #000000a8),
-    url("../image/Banner1.webp");
+    url("../image/Banner1.jpg");
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
@@ -292,14 +292,14 @@ color: var(--hover-secondary);
 
 .Banner .item2 {
   background: linear-gradient(#000000a8, #000000a8),
-    url("../image/Banner2.webp");
+    url("../image/Banner2.jpg");
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
 }
 .Banner .item3 {
   background: linear-gradient(#000000a8, #000000a8),
-    url("../image/Banner3.webp");
+    url("../image/Banner3.jpg");
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;

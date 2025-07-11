@@ -39,7 +39,7 @@ document.getElementById("footer").innerHTML = `
               <a target="_blank" class="facebook" href="https://www.linkedin.com/">
                 <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
               </a>
-              <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=917016964352">
+              <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=919426547996">
                 <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
               </a>
             </div>
