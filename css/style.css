@@ -608,18 +608,20 @@ img {
   background: 0 0 / cover var(--primary-color);
 }
 
+
 .footer-brand {
   width: 100%;
+   margin-bottom: 16px;
   display: flex;
   justify-content: center;
 }
 
-.footer .footer-brand {
-  display: block;
+#footer_logo{
   width: 50px;
-  min-width: 50px;
-  margin-bottom: 16px;
+  height: 50px;
 }
+
+
 
 .footer .fourthH {
   color: #e6e6e6;
@@ -648,6 +650,10 @@ img {
 
 .exploreLinks1 .centerStyle {
   text-transform: none;
+}
+
+.centerStyle{
+  text-align: center;
 }
 
 .footer .exploreLinks ul li {

@@ -70,29 +70,8 @@ document.getElementById("footer").innerHTML = `
             </ul>
           </div>
           <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks1">
-            <h5 class="fourthH centerStyle">Our Products</h5>
-            <ul>
-              <li>
-                <a href="product1.html">
-                  <i class="fa-solid fa-circle-chevron-right"></i> product1 </a>
-              </li>
-              <li>
-                <a href="product2.html">
-                  <i class="fa-solid fa-circle-chevron-right"></i> product2 </a>
-              </li>
-              <li>
-                <a href="product3.html">
-                  <i class="fa-solid fa-circle-chevron-right"></i> product3 </a>
-              </li>
-              <li>
-                <a href="product4.html">
-                  <i class="fa-solid fa-circle-chevron-right"></i> product4 </a>
-              </li>
-              <li>
-                <a href="product5.html">
-                  <i class="fa-solid fa-circle-chevron-right"></i> product5 </a>
-              </li>
-            </ul>
+            <h5 class="fourthH centerStyle">Map</h5>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.69764513385!2d73.21297757506903!3d22.289440379694376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc5909464a0a3%3A0xf4e13432a6a52fa8!2sAtmiya%20engineering!5e0!3m2!1sen!2sin!4v1752236463996!5m2!1sen!2sin" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <!-- Contact Info -->
         </div>
