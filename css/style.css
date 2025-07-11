@@ -560,8 +560,8 @@ color: var(--hover-secondary);
 }
 .footer .footer-brand {
   display: block;
-  width: 180px;
-  min-width: 180px;
+  width: 50px;
+  min-width: 50px;
   margin-bottom: 16px;
 }
 .footer .fourthH {
