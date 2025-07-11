@@ -60,7 +60,7 @@ document.getElementById("footer").innerHTML = `
                   <i class="fa-solid fa-circle-chevron-right"></i>Service </a>
               </li>
               <li>
-                <a href="prouduct.html">
+                <a href="product.html">
                   <i class="fa-solid fa-circle-chevron-right"></i>Products </a>
               </li>
               <li>
