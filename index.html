@@ -355,7 +355,6 @@ const mobileLink = `https://api.whatsapp.com/send?phone=${number}&text=${encoded
 const desktopLink = `https://web.whatsapp.com/send?phone=${number}&text=${encodedMessage}`;
 
     function isMobileDevice() {
-       console.log("abcd:",test(navigator.userAgent));
     return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   }
 
