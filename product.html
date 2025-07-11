@@ -428,16 +428,38 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/spotlight.bundle.js"></script>
 
-<script>
-  document.querySelectorAll(".whatsapp-link").forEach(el => {
-    const number = "919426547996"; // 🔁 Replace with your actual number, no '+'
-    let productName = el.dataset.product;
-    let message = `Hello, I’m interested in learning more about your product: "${productName}". Could you please provide more details?`;
-    let encodedMessage = encodeURIComponent(message);
-    el.href = `https://wa.me/${number}?text=${encodedMessage}`;
-    el.target = "_blank";
-  });
-</script>
+  <script>
+    document.querySelectorAll(".whatsapp-link").forEach(el=>{
+      const number = "919426547996";
+      const productName = el.dataset.product;
+      const message = `Hello, I’m interested in learning more about your product: "${productName}". Could you please provide more details?`
+      const encodedMessage = encodeURIComponent(message);
+
+      
+const mobileLink = `https://api.whatsapp.com/send?phone=${number}&text=${encodedMessage}`;
+const desktopLink = `https://web.whatsapp.com/send?phone=${number}&text=${encodedMessage}`;
+
+    function isMobileDevice() {
+    return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }  
+
+    function updateWhatsAppLink() {
+    const isMobile = isMobileDevice();
+    const targetLink = isMobile ? `https://api.whatsapp.com/send?phone=${number}&text=${encodedMessage}` : `https://web.whatsapp.com/send?phone=${number}&text=${encodedMessage}`;
+
+
+          el.href = targetLink;
+      el.target = "_blank";
+  }
+
+  window.addEventListener("resize", updateWhatsAppLink);
+  window.addEventListener("load", updateWhatsAppLink);
+
+  
+
+
+    })
+  </script>
 
 
 
