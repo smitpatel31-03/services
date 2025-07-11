@@ -11,7 +11,7 @@ document.getElementById("footer").innerHTML = `
             </a>
             <ul class="contact-info">
               <li>
-                <a id="footer_address" class="locationLink" target="_blank" href="https://maps.app.goo.gl/8e5zxepecGP5nJfV8">
+                <a id="footer_address" class="locationLink" target="_blank" href="https://maps.app.goo.gl/dTJNobzMh7pWia3m8">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
                     <g fill="none" stroke="currentColor" stroke-width="1">
                       <path d="M8 14.5C10.5 11 12.5 8 12.5 6a4.5 4.5 0 1 0-9 0c0 2 2 5 4.5 8.5Z" />
@@ -29,10 +29,10 @@ document.getElementById("footer").innerHTML = `
                   </svg> <span >+91 94265 47996</span> </a>
               </li>
               <li>
-                <a  id="footer_email" class="emailAnchor" href="mailto:company@Email.com">
+                <a  id="footer_email" class="emailAnchor" href="mailto:3j.dimension@gmail.com">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M4.616 19q-.691 0-1.153-.462T3 17.384V6.616q0-.691.463-1.153T4.615 5h14.77q.69 0 1.152.463T21 6.616v10.769q0 .69-.463 1.153T19.385 19zM20 6.885l-7.552 4.944q-.106.055-.214.093q-.109.037-.234.037t-.234-.037t-.214-.093L4 6.884v10.5q0 .27.173.443t.443.173h14.769q.269 0 .442-.173t.173-.443zM12 11l7.692-5H4.308zM4 6.885v.211v-.811v.034V6v.32v-.052v.828zV18z" />
-                  </svg>  <span>company@Email.com</span>  </a>
+                  </svg>  <span>3j.dimension@gmail.com</span>  </a>
               </li>
             </ul>
             <div class="social-icons mt-3">
@@ -58,6 +58,10 @@ document.getElementById("footer").innerHTML = `
               <li>
                 <a href="WhatWeDo.html">
                   <i class="fa-solid fa-circle-chevron-right"></i>Service </a>
+              </li>
+              <li>
+                <a href="prouduct.html">
+                  <i class="fa-solid fa-circle-chevron-right"></i>Products </a>
               </li>
               <li>
                 <a href="gallery.html">
