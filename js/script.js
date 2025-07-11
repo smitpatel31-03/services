@@ -56,19 +56,15 @@ document.getElementById("footer").innerHTML = `
                   <i class="fa-solid fa-circle-chevron-right"></i>About </a>
               </li>
               <li>
-                <a href="WhatWeDo.html">
-                  <i class="fa-solid fa-circle-chevron-right"></i>Service </a>
-              </li>
-              <li>
                 <a href="product.html">
                   <i class="fa-solid fa-circle-chevron-right"></i>Products </a>
               </li>
               <li>
                 <a href="gallery.html">
-                  <i class="fa-solid fa-circle-chevron-right"></i>Testimonials </a>
+                  <i class="fa-solid fa-circle-chevron-right"></i>Gallary </a>
               </li>
               <li>
-                <a href="contactUs.html">
+                <a href="contact.html">
                   <i class="fa-solid fa-circle-chevron-right"></i>Contact </a>
               </li>
             </ul>
