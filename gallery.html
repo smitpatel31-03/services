@@ -117,7 +117,7 @@
   <!-- gallery main section end -->
 
 
- <!-- <div id="loader">
+  <!-- <div id="loader">
   <div class="spinner"></div>
 </div> -->
 
@@ -353,22 +353,22 @@
   </script>
 
   <script>
-  Promise.all([
-    fetch('header.html').then(res => res.text())
-  ]).then(([headerHTML]) =>{
+    Promise.all([
+      fetch('header.html').then(res => res.text())
+    ]).then(([headerHTML]) => {
 
-  document.querySelector(".header").innerHTML = headerHTML
-  
-  const curruntPath = window.location.pathname.split('/').pop();
-  document.querySelectorAll(".nav-link").forEach(link => {
-    if(link.getAttribute('href') === curruntPath){
+      document.querySelector(".header").innerHTML = headerHTML
 
-    
-    link.classList.add("active");
-    }
-  })
-  })
-</script>
+      const curruntPath = window.location.pathname.split('/').pop();
+      document.querySelectorAll(".nav-link").forEach(link => {
+        if (link.getAttribute('href') === curruntPath) {
+
+
+          link.classList.add("active");
+        }
+      })
+    })
+  </script>
 
 
   <script defer src="js/script.js"></script>
