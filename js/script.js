@@ -7,7 +7,7 @@ document.getElementById("footer").innerHTML = `
           <!-- Company Info -->
           <div class="col-lg-auto col-sm-6 mb-4 mb-md-0">
             <a class="footer-brand" href="index.html">
-              <img id="footer_logo" loading="lazy" src="image/BrandLogo.webp" alt="Company">
+              <img id="footer_logo" loading="lazy" src="image/BrandLogo.png" alt="Company">
             </a>
             <ul class="contact-info">
               <li>
@@ -18,8 +18,7 @@ document.getElementById("footer").innerHTML = `
                       <path d="M10 6a2 2 0 1 1-4 0a2 2 0 0 1 4 0Z" />
                     </g>
                   </svg>
-                  <span> water tank, Vaswani Estate, Gajra wadia, 6, Pratap Nagar - Makarpura Rd, Gajarawadi, Bhatia Chawl, Moghul Wada, Vadodara, Gujarat 390004
-</span>
+                  <span> 6. vaswani estate, nr, Gajrawadi water tank, pratap nagar ,vadodara. 390004.</span>
                 </a>
               </li>
               <li>
