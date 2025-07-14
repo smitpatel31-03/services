@@ -82,7 +82,7 @@ document.getElementById("footer").innerHTML = `
           <div class="col-12">
             <div class="inner">
               <div class="copyright text-center">
-                <span class="year"></span> All Rights Reserved by <span id="footer_copyright">Company</span> | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
+                <span class="year"></span> All Rights Reserved by <span id="footer_copyright">Atmiya Engineering</span> | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
                   <b>Shriii&nbsp;Tracking&nbsp;Solution</b>
                 </a>
               </div>
