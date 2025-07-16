@@ -34,14 +34,14 @@
 <body>
   <!-- header start -->
 
-  <header class="header">
-    <!-- <div class="wrapheder HomePage0">
+  <header>
+    <div class="wrapheder HomePage0">
       <div id="main-header">
         <div id="header">
           <nav class="navbar navbar-expand-lg bg-light HomePage0">
             <div class="container header">
               <a class="navbar-brand" href="index.html">
-                <img id="logo" src="image/BrandLogo.webp" alt="Company Logo">
+                <img id="logo" src="image/BrandLogo.png" alt="Company Logo">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -51,27 +51,13 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item ">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="about.html">About Us </a>
                   </li>
-
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Products <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 48 48">
-                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                          stroke-width="4" d="M36 18L24 30L12 18"></path>
-                      </svg>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a id="product1" class="dropdown-item" href="product1.html">OEM & White Labeling</a></li>
-                      <li><a id="product2" class="dropdown-item" href="product2.html">Edge Touch Switch</a></li>
-                      <li><a id="product3" class="dropdown-item" href="product3.html">Touch Switch Panel</a></li>
-                      <li><a id="product4" class="dropdown-item" href="product4.html">Hotel Automation</a></li>
-                      <li><a id="product5" class="dropdown-item" href="product5.html">Electric Automation</a></li>
-                    </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="product.html">Products</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="gallery.html">Gallery</a>
@@ -83,10 +69,9 @@
               </div>
             </div>
           </nav>
-
         </div>
       </div>
-    </div> -->
+    </div>
   </header>
 
   <!-- header start -->
@@ -447,21 +432,7 @@
     });
   </script>
 
-  <script>
-    Promise.all([
-      fetch('header.html').then(res => res.text())
-    ]).then(([headerHTML]) => {
-
-      document.querySelector(".header").innerHTML = headerHTML
-
-      const curruntPath = window.location.pathname.split('/').pop();
-      document.querySelectorAll(".nav-link").forEach(link => {
-        if (link.getAttribute('href') === curruntPath) {
-          link.classList.add("active");
-        }
-      })
-    })
-  </script>
+ 
 
 
 
