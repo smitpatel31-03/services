@@ -51,62 +51,62 @@
     <div class="container">
       <div class="row gallery-container">
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="gallery-item" data-src="">
+          <div class="gallery-item" data-src="image/GallaryMain1.jpg">
             <img src="image/Gallary1.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="gallery-item" data-src="">
+          <div class="gallery-item" data-src="image/GallaryMain2.jpg">
             <img src="image/Gallary2.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="gallery-item" data-src="">
+          <div class="gallery-item" data-src="image/GallaryMain3.jpg">
             <img src="image/Gallary3.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="gallery-item" data-src="">
-            <img src="image/Gallary8.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="gallery-item" data-src="">
-            <img src="image/Gallary5.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="gallery-item" data-src="">
-            <img src="image/Gallary6.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="gallery-item" data-src="">
-            <img src="image/Gallary7.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="gallery-item" data-src="">
+          <div class="gallery-item" data-src="image/GallaryMain4.jpg">
             <img src="image/Gallary4.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="gallery-item" data-src="">
+          <div class="gallery-item" data-src="image/GallaryMain5.jpg">
+            <img src="image/Gallary5.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="gallery-item" data-src="image/GallaryMain6.jpg">
+            <img src="image/Gallary6.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="gallery-item" data-src="image/GallaryMain7.jpg">
+            <img src="image/Gallary7.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="gallery-item" data-src="image/GallaryMain8.jpg">
+            <img src="image/Gallary8.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="gallery-item" data-src="image/GallaryMain9.jpg">
             <img src="image/Gallary9.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="gallery-item" data-src="">
+          <div class="gallery-item" data-src="image/GallaryMain10.jpg">
             <img src="image/Gallary10.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="gallery-item" data-src="">
+          <div class="gallery-item" data-src="image/GallaryMain11.jpg">
             <img src="image/Gallary11.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="gallery-item" data-src="">
+          <div class="gallery-item" data-src="image/GallaryMain12.jpg">
             <img src="image/Gallary12.jpg" id="g-image1" alt="Gallery Image" loading="lazy">
           </div>
         </div>
@@ -368,7 +368,21 @@
         }
       })
     })
+
+     setTimeout(function () {
+        lightGallery(document.querySelector(".gallery-container"), {
+          selector: '.gallery-item',
+          plugins: [lgZoom, lgAutoplay],
+          speed: 500,
+          download: false,
+          zoomFromOrigin: false,
+          scale: 1.2,
+          autoplay: true
+        });
+      }, 500);
   </script>
+
+  
 
 
   <script defer src="js/script.js"></script>
