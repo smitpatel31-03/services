@@ -455,6 +455,108 @@
   <script src="js/spotlight.bundle.js"></script>
 
     <script>
+<<<<<<< HEAD
+=======
+    // Header Script
+    // Debounce function to limit how often the event handler executes
+    function debounce(func, delay) {
+      let timeout;
+      return function (...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), delay);
+      };
+    }
+
+    // Header scroll handler
+    function handleScroll() {
+      const header = document.getElementById("main-header");
+      const headerOffset = header.offsetTop;
+      const headerHeight = header.offsetHeight;
+      const belowContent = document.getElementById("headBelowContent");
+      const belowContentOffset = belowContent.offsetTop;
+      const belowContentHeight = belowContent.offsetHeight;
+
+      if (window.pageYOffset > headerOffset + headerHeight + 5) {
+        header.classList.add("sticky-header", "visible");
+        header.classList.remove("headerAnimate");
+
+        applyNavbarStyles();
+      } else {
+        if (
+          window.pageYOffset <
+          belowContentOffset + belowContentHeight + 4
+        ) {
+          header.classList.remove("sticky-header", "visible");
+          header.classList.add("headerAnimate");
+        }
+      }
+    }
+
+    // Function to handle navbar styles based on layout
+    function applyNavbarStyles() {
+      const navbar = document.getElementById("navbarSupportedContent");
+
+      if (window.matchMedia("(max-device-width: 991.98px)").matches) {
+        navbar.setAttribute(
+          "style",
+          "max-height: calc(100vh - 112px); overflow-y: auto;"
+        );
+      } else if (window.matchMedia("(max-device-width: 1199.98px)").matches) {
+        navbar.setAttribute("style", "");
+      } else {
+        navbar.setAttribute("style", "");
+      }
+    }
+
+    // Attach debounced scroll and resize events
+    const debouncedHandleScroll = debounce(handleScroll, 0);
+    const debouncedApplyNavbarStyles = debounce(applyNavbarStyles, 0);
+
+    window.addEventListener("scroll", debouncedHandleScroll);
+    window.addEventListener("resize", debouncedApplyNavbarStyles);
+
+    // Run once on page load to ensure styles are applied correctly
+    window.addEventListener("load", () => {
+      debouncedApplyNavbarStyles();
+      debouncedHandleScroll();
+    });
+  </script>
+
+  <script>
+    document.querySelectorAll(".whatsapp-link").forEach(el => {
+      const number = "919426547996";
+      const productName = el.dataset.product;
+      const message = `Hello, I’m interested in learning more about your product: "${productName}". Could you please provide more details?`
+      const encodedMessage = encodeURIComponent(message);
+
+
+      const mobileLink = `https://api.whatsapp.com/send?phone=${number}&text=${encodedMessage}`;
+      const desktopLink = `https://web.whatsapp.com/send?phone=${number}&text=${encodedMessage}`;
+
+      function isMobileDevice() {
+        return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      }
+
+      function updateWhatsAppLink() {
+        const isMobile = isMobileDevice();
+        const targetLink = isMobile ? `https://api.whatsapp.com/send?phone=${number}&text=${encodedMessage}` : `https://web.whatsapp.com/send?phone=${number}&text=${encodedMessage}`;
+        el.href = targetLink;
+        el.target = "_blank";
+      }
+
+      window.addEventListener("resize", updateWhatsAppLink);
+      window.addEventListener("load", updateWhatsAppLink);
+
+
+
+
+    })
+  </script>
+
+
+
+  <!-- <script>
+>>>>>>> 17fb193ac58b55f96fe5e8466e17f83326b0cd13
     // Header Script
     // Debounce function to limit how often the event handler executes
     function debounce(func, delay) {
