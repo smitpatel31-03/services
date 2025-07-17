@@ -185,14 +185,6 @@
   </section>
   <!-- form section end -->
 
-
-  <!-- <div id="loader">
-  <div class="spinner"></div>
-</div> -->
-
-
-
-
   <!-- whatsapp FAB icon -->
   <div class="fab-container">
     <a class="set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank"
@@ -479,49 +471,7 @@
       })
     })
   </script>
-
-
-
-  <!-- <script>
-  document.getElementById("loader").style.display = "flex";
-    fetch("https://script.google.com/macros/s/AKfycbylL2G8BN0SNarA1xe1BV-lCuHtKvK6UsEtRnHnTXcwl3J5yQkzuLVGfoObX5jD48vr/exec")
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-
-        document.getElementById("c-mobile-number1").textContent = data.c_mobile_number1;
-        document.getElementById("c-address").textContent = data.c_address;
-        document.getElementById("c-email").textContent = data.c_email;
-        document.getElementById("c-time-monday").textContent = data.c_time_monday;
-        document.getElementById("c-time-tuesday").textContent = data.c_time_tuesday;
-        document.getElementById("c-time-wednesday").textContent = data.c_time_wednesday;
-        document.getElementById("c-time-thursday").textContent = data.c_time_thursday;
-        document.getElementById("c-time-friday").textContent = data.c_time_friday;
-        document.getElementById("c-time-saturday").textContent = data.c_time_saturday;
-        document.getElementById("c-time-sunday").textContent = data.c_time_sunday;
-         document.getElementById("logo").src = data.logo;
-        document.getElementById("product1").innerHTML = data.product1;
-        document.getElementById("product2").innerHTML = data.product2;
-        document.getElementById("product3").innerHTML = data.product3;
-        document.getElementById("product4").innerHTML = data.product4;
-        document.getElementById("product5").innerHTML = data.product5;
-        document.getElementById("c-mobile-number1").href=`tel:${data.c_mobile}`;
-        document.getElementById("c-email").href= `mailto:${data.c_email}`;
-        document.getElementById("c-address").href = data.c_address_url;
-
-      })
-      .catch(error => console.error("Error fetching data:", error))
-      .finally(() => {
-        // Add 1s delay, then fade out loader
-        setTimeout(() => {
-          const loader = document.getElementById("loader");
-          loader.classList.add("hide");
-          setTimeout(() => loader.style.display = "none", 500);
-        }, 2000);
-      });
-  </script> -->
-
-
+  
   <script defer src="js/script.js"></script>
 </body>
 

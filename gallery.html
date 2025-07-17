@@ -116,12 +116,6 @@
 
   <!-- gallery main section end -->
 
-
-  <!-- <div id="loader">
-  <div class="spinner"></div>
-</div> -->
-
-
   <!-- whatsapp FAB icon -->
   <div class="fab-container">
     <a class="set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank"
@@ -168,123 +162,6 @@
   <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/autoplay/lg-autoplay.umd.min.js"></script>
-
-  <!-- <script>
-    document.addEventListener("DOMContentLoaded", async function () {
-      const galleryContainer = document.querySelector(".gallery-container");
-
-      try {
-        document.getElementById("loader").style.display = "flex";
-        const res = await fetch('https://script.google.com/macros/s/AKfycbylL2G8BN0SNarA1xe1BV-lCuHtKvK6UsEtRnHnTXcwl3J5yQkzuLVGfoObX5jD48vr/exec'); // Replace with real URL
-        const data = await res.json();
-
-        // ✅ Extract main_gallery_* keys
-        const galleryImages = Object.keys(data)
-          .filter(key => key.startsWith("main_gallery_"))
-          .map(key => data[key]);
-
-          console.log("galleryImages :",galleryImages);
-          
-
-        // ✅ Inject into DOM
-        galleryContainer.innerHTML = galleryImages.map((url, index) => `
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="gallery-item" data-src="${url}">
-          <img src="${url}" alt="Gallery Image ${index + 1}" />
-        </div>
-      </div>
-    `).join('');
-
-        // ✅ Initialize LightGallery after DOM is ready
-        lightGallery(galleryContainer, {
-          selector: '.gallery-item',
-          plugins: [lgZoom, lgAutoplay],
-          speed: 500,
-          download: false,
-          zoomFromOrigin: false,
-          scale: 1.5,
-          autoplay: true,
-          autoplayControls: true,
-          pause: 5000,
-          panZoom: true
-        });
-
-      } catch (err) {
-        console.error("Failed to load gallery:", err);
-          setTimeout(() => {
-          const loader = document.getElementById("loader");
-          loader.classList.add("hide");
-          setTimeout(() => loader.style.display = "none", 500);
-        }, 1000);
-      }
-    });
-
-
-
-  </script> -->
-
-  <!-- <script>
-  document.addEventListener("DOMContentLoaded", async function () {
-    const galleryContainer = document.querySelector(".gallery-container");
-    const loader = document.getElementById("loader");
-
-    // Show loader initially
-    loader.style.display = "flex";
-
-    try {
-      const res = await fetch('https://script.google.com/macros/s/AKfycbylL2G8BN0SNarA1xe1BV-lCuHtKvK6UsEtRnHnTXcwl3J5yQkzuLVGfoObX5jD48vr/exec');
-      const data = await res.json();
-
-      // ✅ Extract main_gallery_* keys
-      const galleryImages = Object.keys(data)
-        .filter(key => key.startsWith("main_gallery_"))
-        .map(key => data[key]);
-
-      console.log("galleryImages:", galleryImages);
-
-      // ✅ Inject into DOM
-      galleryContainer.innerHTML = galleryImages.map((url, index) => `
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="gallery-item" data-src="${url}">
-            <img src="${url}" alt="Gallery Image ${index + 1}" />
-          </div>
-        </div>
-      `).join('');
-       document.getElementById("logo").src = data.logo;
-        document.getElementById("product1").innerHTML = data.product1;
-        document.getElementById("product2").innerHTML = data.product2;
-        document.getElementById("product3").innerHTML = data.product3;
-        document.getElementById("product4").innerHTML = data.product4;
-        document.getElementById("product5").innerHTML = data.product5;
-
-      // ✅ Initialize LightGallery
-      lightGallery(galleryContainer, {
-        selector: '.gallery-item',
-        plugins: [lgZoom, lgAutoplay],
-        speed: 500,
-        download: false,
-        zoomFromOrigin: false,
-        scale: 1.5,
-        autoplay: true,
-        autoplayControls: true,
-        pause: 5000,
-        panZoom: true
-      });
-
-    } catch (err) {
-      console.error("Failed to load gallery:", err);
-    } finally {
-      // ✅ Always hide loader after 1s with fade
-      setTimeout(() => {
-        loader.classList.add("hide");
-        setTimeout(() => loader.style.display = "none", 500); // wait for fade
-      }, 3000);
-    }
-  });
-</script> -->
-
-
-
 
   <script>
     // Header Script

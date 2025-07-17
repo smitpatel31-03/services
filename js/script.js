@@ -70,7 +70,7 @@ document.getElementById("footer").innerHTML = `
           </div>
           <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks1">
             <h5 class="fourthH centerStyle">Map</h5>
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.69764513385!2d73.21297757506903!3d22.289440379694376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc5909464a0a3%3A0xf4e13432a6a52fa8!2sAtmiya%20engineering!5e0!3m2!1sen!2sin!4v1752236463996!5m2!1sen!2sin" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.69764513385!2d73.21297757506903!3d22.289440379694376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc5909464a0a3%3A0xf4e13432a6a52fa8!2sAtmiya%20engineering!5e0!3m2!1sen!2sin!4v1752236463996!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <!-- Contact Info -->
         </div>
@@ -94,46 +94,3 @@ document.getElementById("footer").innerHTML = `
   </footer>
 `;
 
-// Fetch dynamic data from Google Sheets via Apps Script
-// fetch("https://script.google.com/macros/s/AKfycbylL2G8BN0SNarA1xe1BV-lCuHtKvK6UsEtRnHnTXcwl3J5yQkzuLVGfoObX5jD48vr/exec")
-//   .then(response => response.json())
-//   .then(data => {
-//     console.log("Footer data:", data);
-
-//     // Update footer content
-//     document.getElementById("footer_logo").src = data.footer_logo;
-//     document.querySelector("#footer_contact span").innerHTML = data.footer_contact;
-//     document.getElementById("footer_contact").href = `tel:${data.footer_contact}`;
-//     document.querySelector("#footer_email span").innerHTML = data.footer_email;
-//     document.getElementById("footer_email").href = `mailto:${data.footer_email}`;
-//     document.querySelector("#footer_address span").innerHTML = data.footer_address;
-//     document.getElementById("footer_address").href = data.footer_address_link || "#";
-//     document.getElementById("footer_copyright").innerHTML = data["footer-copyright"];
-
-//     // Set favicon dynamically
-//     const link = document.createElement("link");
-//     link.rel = "icon";
-//     link.href = data.fevicon_image;
-//     document.head.appendChild(link);
-
-//     // Update WhatsApp link based on device
-//     const whatsappAnchor = document.querySelector(".set-url-target");
-//     function updateWhatsAppHref() {
-//       const isMobile = window.innerWidth < 768;
-//       const whatsappURL = isMobile
-//         ? `https://api.whatsapp.com/send?phone=${data.whatsapp_Number}`
-//         : `https://web.whatsapp.com/send?phone=${data.whatsapp_Number}`;
-//       whatsappAnchor.setAttribute("href", whatsappURL);
-//     }
-
-//     updateWhatsAppHref();
-
-//     // Handle resize with debounce
-//     window.addEventListener("resize", () => {
-//       clearTimeout(window.resizeTimer);
-//       window.resizeTimer = setTimeout(updateWhatsAppHref, 200);
-//     });
-//   })
-//   .catch(error => {
-//     console.error("Error fetching footer data:", error);
-//   });
